@@ -1,5 +1,7 @@
 def make_dict(L):
 	d = {}
+	for H in (0, len(L), 2):
+		d[L[H] ] = L[H+1]
 	# .... сделать из списка словарь
 	return d
 
