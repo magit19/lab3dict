@@ -1,10 +1,8 @@
 def last_digit(L):
 	d = {}
 	for i in L:
-		if (i%10 in d):
-			d[i%10] += 1
-		else:
-			d[i%10] = 1
+		last = i % 10
+		d[last] = d.get(last, 0) + 1
 	# подсчитать последние цифры всех чисел
 	return d
 
