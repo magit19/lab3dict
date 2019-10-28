@@ -22,14 +22,19 @@
 
 #### Example Input
 
-    1
-    abacaba X
-    3
-    read abacaba
-    write abacaba
-    execute abacaba
+    2
+    input.txt W R
+    file1 X
+    5
+    read input.txt
+    execute input.txt
+    read file1
+    write file1
+    execute file1 
 
 #### Example Output
+    OK
+    Access denied
     Access denied
     Access denied
     OK
