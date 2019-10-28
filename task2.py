@@ -1,7 +1,8 @@
+from collections import Counter
+
 def last_digit(L):
-	d = {}
-	# подсчитать последние цифры всех чисел
-	return d
+	lasts = [x%10 for x in L]
+	return Counter(lasts)
 
 
 if __name__ == '__main__':
